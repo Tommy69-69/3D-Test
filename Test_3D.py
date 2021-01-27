@@ -88,6 +88,8 @@ def plotTriangleLine(xc,yc,zc):
     
 
     [A,A1,A2]=hitPoint(x,y,z)
+    #Name text
+    plt.text(100,40,'Name: Francisco Emanuel Grijalva Ramirez',fontsize=15)
     #Text A,A1,A2,A1+A2,In,Out
     if((A1+A2)>A):
         plt.text(180,80,'OUT')
@@ -99,18 +101,18 @@ def plotTriangleLine(xc,yc,zc):
     A1=ceil(A1)
     A2=ceil(A2)
     A3=ceil(A1+A2)
-    plt.text(180,30,'A=',color='k')
-    plt.text(190,30,A,color='k')
-    plt.text(180,35,'A1=',color='r')
-    plt.text(190,35,A1,color='r')
-    plt.text(180,40,'A2=',color='r')
-    plt.text(190,40,A2,color='r')
+    plt.text(180,60,'A=',color='k')
+    plt.text(190,60,A,color='k')
+    plt.text(180,65,'A1=',color='r')
+    plt.text(190,65,A1,color='r')
+    plt.text(180,70,'A2=',color='r')
+    plt.text(190,70,A2,color='r')
     if((A1+A2)>A):
-        plt.text(180,45,'A1+A2=',color=(.5,.2,.8))
-        plt.text(200,45,A3,color=(.5,.2,.8))
+        plt.text(180,75,'A1+A2=',color=(.5,.2,.8))
+        plt.text(200,75,A3,color=(.5,.2,.8))
     elif((A1+A2)<A):
-        plt.text(180,45,'A1+A2=',color='g')
-        plt.text(200,45,A3,color='g')
+        plt.text(180,75,'A1+A2=',color='g')
+        plt.text(200,75,A3,color='g')
 
     plotPlaneLine(xg,yg,zg)
 
